@@ -1,0 +1,42 @@
+je l'ai appellé 'READ ME' parce que dans tous les jeux le fichier doc s'appelle comme ca
+
+Pour lancer il faut juste demarrer le fichier 'main.py'
+Ensuite la grille apparait, c'est clique droit pour ajouter ou enlever une cellule
+Et clique gauche pour ajouter des structures spéciales (planneur, canon,...)
+Pour changer de structure il faut faire rouler la molette
+Vous pouvez realiser une seule génération en cliquant sur flèche de droite
+Pour mettre en pause ou continuer le programme il faut cliquer sur 'P'
+Pour réinitialiser la feuille faites flèche de gauche
+
+#--- constantes ---#
+Le fichier constantes contient toutes les constantes et variables (pas les attributs) que je vais utiliser
+
+#--- Cell ---#
+La class Cell permet de créer une cellule (une case de la grille)
+
+voisine : méthode permettant de Calculer le nombre de voisines
+
+calcule : Permet de calculer et de modifier l'etat d'une cellule en fonction de l'attribut self.nmbVoisine
+
+draw : Permet de dessiner sur la feuille la case et les lines qui l'entoure
+
+#--- World ---#
+la class World permet de gerer la liste de liste de cellule et aussi la génération (entre autre)
+
+init : permet d'initialiser la liste de liste de cellules
+
+calcule : Permet de modifier l'etat de toutes les cellules en fonction du nombre de voisines
+
+calculeVoisine : Permet de calculer ne nombre de voisines de chaque cellules
+
+draw : Permet de dessiner tout ce qu'il y a sur la feuille, les cellules, les lignes
+
+surimi : Permet de charger une structure à partir d'un fichier texte
+C'était plus simple de chercher dans un fichier texte que de modifier manuelement chaque cellules
+
+#--- main ---#
+C'est le fichier ou tout le code est mélangé, c'est ce fichier qui va actionner tel ou tel fonction/methode
+
+#--- Autre ---#
+Les structures doivent etres ajouter dans le dossier 'struct' le nom des structures doivent être en MAJUSCULE
+pour respecter une harmonie, les structures doivent êtres au format '.txt'
